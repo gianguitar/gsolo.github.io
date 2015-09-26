@@ -1,0 +1,17 @@
+# Site settings
+title: Grayscale
+email: feedback@startbootstrap.com
+description: > # this means to ignore newlines until "baseurl:"
+  A free, responsive, one page Bootstrap theme. 
+  Created by Start Bootstrap.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: SBootstrap
+github_username:  IronSummitMedia/startbootstrap
+googleplus_username: Startbootstrap
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+sass:
+  style: compressed

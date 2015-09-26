@@ -1,0 +1,11 @@
+# gitignore
+
+# temp files
+*~
+*.lock
+
+# jekyll
+_site
+.sass-cache
+
+# digitalr00ts
