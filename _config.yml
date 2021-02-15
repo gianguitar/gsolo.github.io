@@ -1,9 +1,9 @@
 # Site settings
-title: Gian Solo
+title: GRAYSCALE
 email: soundsbygian@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Some Things Grow. 
-  Some Things Grey.
+  A free, responsive, one page Bootstrap theme.
+Created by Start Bootstrap.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: SBootstrap
