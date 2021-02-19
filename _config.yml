@@ -1,9 +1,8 @@
 # Site settings
-title: GRAYSCALE
+title: GIAN SOLO
 email: soundsbygian@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  A free, responsive, one page Bootstrap theme.
-Created by Start Bootstrap.
+  Musician, Music Producer & Writer.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: SBootstrap
