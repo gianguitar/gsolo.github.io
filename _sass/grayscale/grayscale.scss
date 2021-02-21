@@ -59,7 +59,7 @@ a {
     border-bottom: 1px solid fade(white, 30%);
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: white;
+    background-color: black;
     .navbar-brand {
         font-weight: 700;
         &:focus {
@@ -68,7 +68,7 @@ a {
         .navbar-toggle {
             padding: 4px 6px;
             font-size: 16px;
-            color: white;
+            color: black;
             &:focus,
             &:active {
                 outline: none;
@@ -76,7 +76,7 @@ a {
         }
     }
     a {
-        color: black;
+        color: white;
     }
     .nav {
         li {
