@@ -116,7 +116,7 @@ a {
         transition: background 5s ease-in-out,padding .5s ease-in-out;
         &.top-nav-collapse {
             padding: 0;
-            background: black;
+            background: white;
             border-bottom: 1px solid fade(white, 30%);
         }
     }
