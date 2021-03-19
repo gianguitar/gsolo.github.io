@@ -233,7 +233,7 @@ a {
 }
 
 .content-section {
-    padding-top: 350px;
+    padding-top: 300px;
 }
 
 .download-section {
@@ -256,11 +256,11 @@ a {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 300px;
+        padding-top: 100px;
     }
 
     .download-section {
-        padding: 300px 0;
+        padding: 250px 0;
     }
 
     #map {
