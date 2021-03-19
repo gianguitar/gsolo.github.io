@@ -56,7 +56,7 @@ a {
 
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid fade(white, 30%);
+    border-bottom: 1px solid fade(F0F0F0, 30%);
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: black;
@@ -85,7 +85,7 @@ a {
                 -moz-transition: background 3s ease-in-out;
                 transition: background 3s ease-in-out;
                 &:hover {
-                    color: fade(white, 80%);
+                    color: fade(F0F0F0, 80%);
                     outline: none;
                     background-color: transparent;
                 }
@@ -98,7 +98,7 @@ a {
             &.active {
                 outline: none;
                 a {
-                    background-color: fade(white, 30%);
+                    background-color: fade(F0F0F0, 30%);
                     &:hover {
                         color: black;
                     }
