@@ -248,6 +248,18 @@ a {
     -o-background-size: cover;
 }
 
+.contact-section {
+    width: 100%;
+    padding: 250px 0;
+    color: white;
+    background: url(../img/CamG.jpg) no-repeat center center scroll;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
 #map {
     width: 100%;
     height: 200px;
