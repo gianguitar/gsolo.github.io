@@ -138,12 +138,12 @@ a {
     .intro-body {
         display: table-cell;
         vertical-align: left;
-        position:absolute;
+        position:relative;
         top:0px; 
+        left:0px;
         margin:5px;
         .brand-heading {
             font-size: 20px;
-            float: right;
         }
         .intro-text {
             font-size: 18px;
