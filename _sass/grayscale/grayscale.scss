@@ -140,13 +140,13 @@ a {
         vertical-align: left;
         position:relative;
         top:0px; 
-        left:0px;
+        left:-100px;
         margin:5px;
         .brand-heading {
             font-size: 0px;
         }
         .intro-text {
-            font-size: 18px;
+            font-size: 12px;
         }
     }
     @media(min-width:768px) {
