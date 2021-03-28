@@ -137,7 +137,10 @@ a {
     -o-background-size: cover;
     .intro-body {
         display: table-cell;
-        vertical-align: top left;
+        vertical-align: middle;
+        position:absolute;
+        top:0px; 
+        margin:5px;
         .brand-heading {
             font-size: 20px;
             float: right;
