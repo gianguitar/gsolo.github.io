@@ -377,3 +377,44 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: fade(white, 20%);
 }
+
+.outro {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+    background: url(../img/outrobg.jpg) no-repeat bottom center scroll;
+    background-color: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    .outro-body {
+        display: table-cell;
+        vertical-align: left;
+        position:relative;
+        top:0px; 
+        left:-100px;
+        margin:5px;
+        .brand-heading {
+            font-size: 0px;
+        }
+        .outro-text {
+            font-size: 12px;
+        }
+    }
+    @media(min-width:768px) {
+        height: 100%;
+        padding: 0;
+        .outro-body {
+            .brand-heading {
+                font-size: 100px;
+            }
+            .outro-text {
+                font-size: 26px;
+            }
+        }
+    }
+}
