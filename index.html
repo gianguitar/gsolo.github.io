@@ -138,11 +138,11 @@ title: "Gian Solo Music Official Site"
     <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
     <label for="email-address">Email Address</label>
     <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-    <label for="telephone">Telephone Number (Optional)</label>
-    <input type="telephone" name="telephone" id="telephone" placeholder="(555) 555-5555">
-    <label for="complaint">Complaint</label>
-    <textarea rows="6" name="complaint" id="complaint" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
-    <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
+    <label for="telephone">Subject</label>
+    <input type="telephone" name="telephone" id="telephone" placeholder="question for you">
+    <label for="complaint">Message</label>
+    <textarea rows="6" name="complaint" id="complaint" placeholder="Reaching out to inquire about..." required=""></textarea>
+    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
   </fieldset>
   <input type="submit" value="File Complaint">
 </form><style>/* reset */
@@ -168,7 +168,7 @@ title: "Gian Solo Music Official Site"
 #fs-frm label,
 #fs-frm legend,
 #fs-frm ::placeholder {
-  font-size: .825rem;
+  font-size: 14px;
   margin-bottom: .5rem;
   padding-top: .2rem;
   display: flex;
