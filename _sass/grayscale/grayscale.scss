@@ -388,10 +388,10 @@ body {
     color: white;
     background: url() no-repeat bottom center scroll;
     background-color: black;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
     background-size: auto;
-    -o-background-size: cover;
+    -o-background-size: auto;
     .outro-body {
         display: table-cell;
         vertical-align: middle;
