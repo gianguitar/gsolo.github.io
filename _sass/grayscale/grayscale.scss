@@ -384,6 +384,17 @@ body {
   padding-bottom: 40px;
 }
 
+#shop.content-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#shop::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .outro {
     display: table;
     width: 100%;
