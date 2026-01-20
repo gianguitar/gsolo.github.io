@@ -379,6 +379,23 @@ body {
     webkit-tap-highlight-color: fade(white, 20%);
 }
 
+.about-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.about-flex .about-img img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.about-flex .about-text {
+  flex: 1;
+}
+
 #about.content-section {
   padding-top: 40px;
   padding-bottom: 40px;
