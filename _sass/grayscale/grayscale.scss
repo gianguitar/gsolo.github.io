@@ -412,33 +412,19 @@ body {
     clear: both;
 }
 
-.outro {
-    display: table;
-    width: 100%;
-    height: auto;
-    padding: 0px 0;
-    text-align: center;
-    color: white;
-    background: url() no-repeat bottom center scroll;
-    background-color: black;
-    -webkit-background-size: auto;
-    -moz-background-size: auto;
-    background-size: auto;
-    -o-background-size: auto;
-    .outro-body {
-        display: table-cell;
-        vertical-align: middle;
-        position:relative;
-        top:0px; 
-        left:-100px;
-        margin:5px;
-        .brand-heading {
-            font-size: 0px;
-        }
-        .outro-text {
-            font-size: 12px;
-        }
-    }
+/* Clean footer */
+.site-footer {
+  padding: 20px 0;
+  background: black;
+  color: white;
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
     @media(min-width:768px) {
         height: 100%;
         padding: 0;
