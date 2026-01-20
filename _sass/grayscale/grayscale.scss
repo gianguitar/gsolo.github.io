@@ -414,15 +414,18 @@ body {
 
 /* Clean footer */
 .site-footer {
-  padding: 20px 0;
-  background: black;
-  color: white;
+  background-color: #000;
+  padding: 18px 0 16px; /* Tara-style tight vertical spacing */
+  text-align: center;
 }
 
 .site-footer p {
   margin: 0;
   font-size: 12px;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0.85;
 }
 
     @media(min-width:768px) {
