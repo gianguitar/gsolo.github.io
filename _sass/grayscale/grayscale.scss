@@ -435,17 +435,3 @@ body {
   color: #fff;
   opacity: 0.85;
 }
-
-    @media(min-width:768px) {
-        height: 100%;
-        padding: 0;
-        .outro-body {
-            .brand-heading {
-                font-size: 12px;
-            }
-            .outro-text {
-                font-size: 12px;
-            }
-        }
-    }
-}
