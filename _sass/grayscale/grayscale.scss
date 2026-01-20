@@ -435,3 +435,41 @@ body {
   color: #fff;
   opacity: 0.85;
 }
+
+/* ==============================
+   Section Headers & Navbar Styling
+   ============================== */
+
+/* Section headers (About, Listen, Videos, Shop, Contact) */
+section.content-section h2 {
+  font-weight: 700;          // bold, like Tara
+  font-size: 36px;           // header size similar to Tara's
+  margin-bottom: 20px;       // spacing below the header
+  letter-spacing: 1px;       // subtle spacing between letters
+  text-transform: uppercase; // all caps
+  color: #111;               // dark color for headers
+}
+
+/* Subheaders / small text (optional, like muted text under headers) */
+section.content-section p.text-muted {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Navbar / section nav links (About, Sync Music, Upcoming Shows) */
+.navbar-custom .nav li a {
+  font-weight: 600;         // slightly bold
+  font-size: 16px;          // similar to Tara's nav font
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #111;              // dark text
+  padding: 10px 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus {
+  color: $primary;          // use your theme color on hover
+  text-decoration: none;
+}
