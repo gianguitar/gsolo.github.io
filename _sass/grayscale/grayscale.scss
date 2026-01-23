@@ -475,3 +475,34 @@ section.content-section p.text-muted {
   color: $primary;           // use your theme color on hover
   text-decoration: none;
 }
+
+/* Center the video thumbnails + text */
+.video-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* Override your old float layout */
+.video-grid .gallery {
+  float: none;
+  width: 250px;
+  margin: 0;
+  text-align: center;
+}
+
+.video-grid .gallery img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Caption styling */
+.video-grid .gallery p {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.4;
+}
