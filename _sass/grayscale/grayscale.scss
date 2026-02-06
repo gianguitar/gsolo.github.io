@@ -487,9 +487,7 @@ section.content-section p.text-muted {
 
 /* Override your old float layout */
 .video-grid .gallery {
-  float: none;
   width: 220px;
-  margin: 0;
   text-align: center;
 }
 
@@ -502,6 +500,7 @@ section.content-section p.text-muted {
 
 .video-container {
   position: relative;
+  width: 100%;
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
   height: 0;
   overflow: hidden;
@@ -514,6 +513,7 @@ section.content-section p.text-muted {
   left: 0;
   width: 100%;
   height: 100%;
+    border: 0;
 }
 
 /* Caption styling */
