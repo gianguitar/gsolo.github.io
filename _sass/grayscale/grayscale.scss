@@ -615,6 +615,25 @@ section.content-section p.text-muted {
   }
 }
 
-.more-videos-link {
-  margin-top: 30px;
+/* center the "more videos" row under the grid */
+.more-videos {
+  grid-column: 1 / -1;   /* span the entire grid width */
+  text-align: center;
+  margin-top: 35px;
 }
+
+.more-videos-link {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 6px;
+  background: #cc0000;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.more-videos-link:hover {
+  background: #ff1a1a;
+}
+
