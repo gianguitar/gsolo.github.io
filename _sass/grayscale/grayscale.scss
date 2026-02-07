@@ -476,21 +476,21 @@ section.content-section p.text-muted {
   text-decoration: none;
 }
 
-/* Center the video thumbnails + text */
+/* VIDEO GRID LAYOUT */
 .video-grid {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin-top: 30px;
+  display: flex;           /* use flex to line up items */
+  flex-wrap: wrap;         /* wrap to next line if needed */
+  justify-content: center; /* center the row */
+  gap: 20px;               /* space between videos */
 }
 
-/* Override your old float layout */
+/* Each video gallery */
 .video-grid .gallery {
-  width: 220px;
+  width: 220px;           /* keep it similar to old thumbnail width */
   text-align: center;
 }
 
+/* Remove image styling if using iframes only */
 .video-grid .gallery img {
   width: 100%;
   max-width: 220px;
@@ -498,22 +498,24 @@ section.content-section p.text-muted {
   border-radius: 6px;
 }
 
+/* VIDEO CONTAINER */
 .video-container {
   position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  width: 100%;             /* match parent width */
+  padding-bottom: 56.25%;  /* 16:9 aspect ratio */
   height: 0;
   overflow: hidden;
-  max-width: 100%;
+  border-radius: 6px;
 }
 
+/* Embedded iframe */
 .video-container iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-    border: 0;
+  border: 0;
 }
 
 /* Caption styling */
