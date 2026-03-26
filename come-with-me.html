@@ -42,11 +42,16 @@
 
     <!-- 📩 EMAIL CAPTURE -->
     <div class="email-section">
-      <p>Get early access to new music + exclusives</p>
-      <input type="email" placeholder="Enter your email">
-      <br>
-      <a href="#" class="spotify-button">Join</a>
-    </div>
+  <p>Get unreleased songs + early drops before anyone else</p>
+
+  <form id="fs-frm" name="email-capture" accept-charset="utf-8" action="https://formspree.io/f/mzbkqoqv" method="post">
+    <fieldset id="fs-frm-inputs">
+      <input type="email" name="_replyto" id="email-address" placeholder="Enter your email" required>
+      <input type="hidden" name="_subject" value="Come With Me Email Signup">
+    </fieldset>
+    <input type="submit" value="Join" class="spotify-button">
+  </form>
+</div>
 
     <!-- 📱 SOCIALS -->
     <div class="footer">
