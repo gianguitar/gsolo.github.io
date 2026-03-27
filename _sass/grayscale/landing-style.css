@@ -173,3 +173,16 @@ iframe {
   box-shadow: 0 0 0 2px #2b5876 !important; /* custom blue glow */
   border-color: #2b5876 !important;
 }
+
+/* 🔥 NUCLEAR FIX FOR ORANGE FOCUS (Safari/Chrome) */
+#fs-frm input:focus,
+#fs-frm input:focus-visible,
+#fs-frm textarea:focus,
+#fs-frm textarea:focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 2px #2b5876 !important;
+  border-color: #2b5876 !important;
+
+  -webkit-appearance: none !important;
+  appearance: none !important;
+}
