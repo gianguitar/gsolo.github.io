@@ -165,3 +165,11 @@ iframe {
   margin: 20px 0;
   border-radius: 15px;
 }
+
+/* 🔥 FORCE REMOVE DEFAULT ORANGE OUTLINE */
+#fs-frm input:focus,
+#fs-frm textarea:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 2px #2b5876 !important; /* custom blue glow */
+  border-color: #2b5876 !important;
+}
