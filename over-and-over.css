@@ -84,6 +84,32 @@ body {
   color: #000;
 }
 
+.alt-links {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.alt-links a {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 10px 22px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  width: 200px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.alt-links a:hover {
+  background: #fff;
+  color: #000;
+}
+
 /* MOOD TEXT */
 .mood {
   margin-top: 40px;
