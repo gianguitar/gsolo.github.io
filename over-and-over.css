@@ -52,20 +52,6 @@ body {
   margin: 25px 0;
 }
 
-/* Secondary Links */
-.platform-links {
-  margin-top: 25px;
-  font-size: 0.95rem;
-}
-
-.platform-links a {
-  display: block;
-  margin: 6px 0;
-  color: #1a1a1a;
-  text-decoration: none;
-  opacity: 0.85;
-}
-
 /* CTA */
 .cta {
   display: inline-block;
@@ -102,12 +88,13 @@ body {
   text-transform: uppercase;
   width: 200px;
   text-align: center;
-  transition: 0.3s ease;
+  transition: 0.25s ease;
 }
 
 .alt-links a:hover {
   background: #fff;
   color: #000;
+  transform: scale(1.02);
 }
 
 /* MOOD TEXT */
