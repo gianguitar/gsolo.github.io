@@ -97,6 +97,14 @@ body {
   transform: scale(1.02);
 }
 
+.subhead {
+  margin-top: 30px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+
 /* MOOD TEXT */
 .mood {
   margin-top: 40px;
