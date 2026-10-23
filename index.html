@@ -121,6 +121,175 @@ plays.
   </div>
 </section>
 
+
+<!-- PHOTOS (4th) -->
+<section id="photos" class="content-section text-center">
+  <div class="container">
+    <h2>Photos</h2>
+    <p class="text-muted">
+      A few moments from the music, the studio, and everything in between.
+    </p>
+
+    <div class="photo-grid">
+      <button class="photo-item" type="button" aria-label="Enlarge artist portrait">
+        <img src="img/photo-1.jpg" alt="Gian Solo artist portrait" loading="lazy">
+      </button>
+
+      <button class="photo-item" type="button" aria-label="Enlarge guitar photo">
+        <img src="img/photo-2.jpg" alt="Gian Solo with guitar" loading="lazy">
+      </button>
+
+      <button class="photo-item" type="button" aria-label="Enlarge studio photo">
+        <img src="img/photo-3.jpg" alt="Gian Solo recording music" loading="lazy">
+      </button>
+
+      <button class="photo-item" type="button" aria-label="Enlarge behind the scenes photo">
+        <img src="img/photo-4.jpg" alt="Gian Solo behind the scenes" loading="lazy">
+      </button>
+
+      <button class="photo-item" type="button" aria-label="Enlarge promotional photo">
+        <img src="img/photo-5.jpg" alt="Gian Solo promotional photo" loading="lazy">
+      </button>
+
+      <button class="photo-item" type="button" aria-label="Enlarge candid photo">
+        <img src="img/photo-6.jpg" alt="Gian Solo candid moment" loading="lazy">
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO LIGHTBOX -->
+<dialog id="photo-lightbox" aria-label="Enlarged photo">
+  <button type="button" id="photo-close" aria-label="Close photo">&times;</button>
+  <img id="photo-large" src="" alt="">
+</dialog>
+
+
+<style>
+/* Gian Solo photo gallery */
+#photos .photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 35px;
+}
+
+#photos .photo-item {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: #111;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#photos .photo-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform .3s ease, opacity .3s ease;
+}
+
+#photos .photo-item:hover img {
+  transform: scale(1.04);
+  opacity: .85;
+}
+
+#photos .photo-item:focus-visible,
+#photo-close:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+#photo-lightbox {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  padding: 45px 16px 16px;
+  border: 0;
+  background: #111;
+  color: white;
+  max-width: 92vw;
+  max-height: 92vh;
+}
+
+#photo-lightbox::backdrop {
+  background: rgba(0, 0, 0, .9);
+}
+
+#photo-large {
+  display: block;
+  max-width: 100%;
+  max-height: 78vh;
+  width: auto;
+  height: auto;
+  margin: auto;
+  object-fit: contain;
+}
+
+#photo-close {
+  position: absolute;
+  top: 5px;
+  right: 12px;
+  border: 0;
+  background: transparent;
+  color: white;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+@media (max-width: 650px) {
+  #photos .photo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #photos .photo-item img {
+    transition: none;
+  }
+}
+</style>
+
+
+<script>
+(function () {
+  const gallery = document.getElementById('photos');
+  const lightbox = document.getElementById('photo-lightbox');
+  const largeImage = document.getElementById('photo-large');
+  const closeButton = document.getElementById('photo-close');
+
+  if (!gallery || !lightbox || !largeImage || !closeButton) return;
+
+  gallery.querySelectorAll('.photo-item').forEach(function (button) {
+    button.addEventListener('click', function () {
+      const image = button.querySelector('img');
+
+      largeImage.src = image.currentSrc || image.src;
+      largeImage.alt = image.alt;
+      lightbox.showModal();
+    });
+  });
+
+  closeButton.addEventListener('click', function () {
+    lightbox.close();
+  });
+
+  lightbox.addEventListener('click', function (event) {
+    if (event.target === lightbox) lightbox.close();
+  });
+
+  lightbox.addEventListener('close', function () {
+    largeImage.removeAttribute('src');
+  });
+})();
+</script>
+
+
 <!-- SHOP (4th) -->
 <section id="shop" class="content-section text-center">
     <div class="row">
